@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Projects</title>
+    <script src="myScript.js"></script>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        body {
+            font-size: 28px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top: 0;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: dimgrey;
+        }
+
+        .active {
+            background-color: mediumpurple;
+        } <!---src http://www.w3schools.com-->
+
+    </style>
+</head>
+<img>
+
+<div class="header">
+</div>
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Academics.html">Academics</a></li>
+    <li><a href="Pets.html">Interests</a></li>
+    <li><a class="active" href="MiniProjects.html">Mini Projects</a></li>
+</ul>
+<form name="project1">
+    <h4>Mini Project #1: Temperature Bug</h4>
+    <br><br>
+    Type a quantity:
+    <input name="num1" type="text" placeholder="Degrees">
+    <br><br>
+    <button type="button" onclick="document.project1.result1.value=TemperatureBug()">Calculate in Fahrenheit!</button>
+    or
+    <button type="button" onclick="document.project1.result2.value=TemperatureBugCelsius()">Calculate in Celsius!</button>
+    <br> <br>
+    Results:
+    <input name="result1" type="text" readonly="true" style="border-style:none "width="50000">
+    <br><br>
+    <input name="result2" type="text" readonly="true" style="border-style:none "
+    width="50000">
+    <img src="img/loading.gif" height=200 width="500" id="temppic"/> <!-- HELP FROM ABRARRRRR!!-->
+</form>
+
+<form name="DropDown">
+    <h4> Mini Project #2: Calorie Counter</h4>
+    <select id="myList">
+        <option> Walking </option>
+        <option>Running</option>
+        <option>Sleeping</option>
+        <option>Swimming</option>
+        <option>Biking</option>
+        <option>Dancing</option>
+        <option>Hiking</option>
+    </select>
+
+    Insert amount of MINUTES spent doing the activity
+    <input name="num1" type="text" placeholder="MINUTES">
+    <button type="button" onclick="document.DropDown.result.value=dropDown()">Calculate!</button>
+    Results: <input name="result" type="text" readonly="true" style="border-style:none "width="5000">
+</form>
+<form name="project3">
+    <h4> Mini Project #3: Assign Grade</h4>
+    <br><br>
+    Type a quantity:
+    <input name="num1" type="text" placeholder="NUMBER">
+    <br><br>
+    <button type="button" onclick="document.project3.result.value=assignGrade()">ASSIGN GRADE</button>
+    <br><br>
+
+    Results: <input name="result" type="text" readonly="true" style="border-style:none "width="5000">
+
+
+</body>
+</html>
